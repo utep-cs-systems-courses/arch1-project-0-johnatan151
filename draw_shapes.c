@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "draw.h"
 
@@ -23,6 +24,12 @@ void print_triangle(int leftCol, int size)
     for (col = 0; col < minCol; col++) putchar(' ');
     for (       ; col <= maxCol; col++) putchar('*');
     putchar('\n');
+
   }
 }
+void print_arrow(int leftCol, int size){
+  print_triangle(leftCol/2,size);
+  print_square(leftCol,size);
+}
+
 
